@@ -1,0 +1,214 @@
+{
+  "seed": 42,
+  "results_file": "C:\\Users\\Kazibwe Francis Bant\\machine-learning\\quick_recovery_results.json",
+  "regression_model_file": "C:\\Users\\Kazibwe Francis Bant\\machine-learning\\quick_recovery_artifacts\\regression_model.pt",
+  "classification_model_file": "C:\\Users\\Kazibwe Francis Bant\\machine-learning\\quick_recovery_artifacts\\classification_model.pt",
+  "regression_choice": {
+    "config": {
+      "name": "exp01_baseline_multitask",
+      "drop_features": [],
+      "mode": "multitask",
+      "alpha": 0.7,
+      "beta": 0.3,
+      "weighted_ce": false,
+      "focal_gamma": 0.0,
+      "use_weighted_sampler": false,
+      "freeze_encoder": false,
+      "unfreeze_encoder_lr": 0.0001,
+      "head_lr": 0.001,
+      "weight_decay": 0.0001,
+      "dropout": 0.2,
+      "max_epochs": 30,
+      "patience": 6
+    },
+    "metrics": {
+      "mae": 3.831317764217571,
+      "rmse": 4.8701625157049095,
+      "accuracy": 0.1906779661016949,
+      "macro_f1": 0.15444823043023942,
+      "weighted_f1": 0.15227690469095193,
+      "balanced_accuracy": 0.21331659671282313,
+      "target_class": 4,
+      "target_class_recall": 0.0,
+      "target_class_f1": 0.0,
+      "per_class": [
+        {
+          "class": 0,
+          "precision": 0.23076923076923078,
+          "recall": 0.05660377358490566,
+          "f1": 0.09090909090909091,
+          "support": 53
+        },
+        {
+          "class": 1,
+          "precision": 0.3111111111111111,
+          "recall": 0.2153846153846154,
+          "f1": 0.2545454545454545,
+          "support": 65
+        },
+        {
+          "class": 2,
+          "precision": 0.15384615384615385,
+          "recall": 0.2,
+          "f1": 0.17391304347826086,
+          "support": 30
+        },
+        {
+          "class": 3,
+          "precision": 0.16058394160583941,
+          "recall": 0.5945945945945946,
+          "f1": 0.25287356321839083,
+          "support": 37
+        },
+        {
+          "class": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 51
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          6,
+          9,
+          35,
+          0
+        ],
+        [
+          5,
+          14,
+          10,
+          35,
+          1
+        ],
+        [
+          2,
+          5,
+          6,
+          16,
+          1
+        ],
+        [
+          1,
+          9,
+          5,
+          22,
+          0
+        ],
+        [
+          2,
+          11,
+          9,
+          29,
+          0
+        ]
+      ]
+    }
+  },
+  "classification_choice": {
+    "config": {
+      "name": "sweep_cls_g1p5_lr8e4_do0p3",
+      "drop_features": [
+        "vehicle_count"
+      ],
+      "mode": "classification",
+      "alpha": 0.7,
+      "beta": 0.3,
+      "weighted_ce": true,
+      "focal_gamma": 1.5,
+      "use_weighted_sampler": true,
+      "freeze_encoder": false,
+      "unfreeze_encoder_lr": 0.0001,
+      "head_lr": 0.0008,
+      "weight_decay": 0.0001,
+      "dropout": 0.3,
+      "max_epochs": 18,
+      "patience": 4
+    },
+    "metrics": {
+      "accuracy": 0.1694915254237288,
+      "macro_f1": 0.1407250688708596,
+      "weighted_f1": 0.13170283783495398,
+      "balanced_accuracy": 0.19478048183930535,
+      "target_class": 4,
+      "target_class_recall": 0.19607843137254902,
+      "target_class_f1": 0.19801980198019803,
+      "per_class": [
+        {
+          "class": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 53
+        },
+        {
+          "class": 1,
+          "precision": 0.2777777777777778,
+          "recall": 0.07692307692307693,
+          "f1": 0.12048192771084337,
+          "support": 65
+        },
+        {
+          "class": 2,
+          "precision": 0.19047619047619047,
+          "recall": 0.13333333333333333,
+          "f1": 0.1568627450980392,
+          "support": 30
+        },
+        {
+          "class": 3,
+          "precision": 0.14285714285714285,
+          "recall": 0.5675675675675675,
+          "f1": 0.22826086956521738,
+          "support": 37
+        },
+        {
+          "class": 4,
+          "precision": 0.2,
+          "recall": 0.19607843137254902,
+          "f1": 0.19801980198019803,
+          "support": 51
+        }
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          4,
+          4,
+          36,
+          9
+        ],
+        [
+          0,
+          5,
+          4,
+          40,
+          16
+        ],
+        [
+          0,
+          1,
+          4,
+          16,
+          9
+        ],
+        [
+          0,
+          5,
+          5,
+          21,
+          6
+        ],
+        [
+          0,
+          3,
+          4,
+          34,
+          10
+        ]
+      ]
+    }
+  }
+}
