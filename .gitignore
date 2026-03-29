@@ -1,0 +1,2 @@
+# Local Claude permissions/config (contains machine-local secrets)
+.claude/settings.local.json
